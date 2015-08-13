@@ -1,0 +1,122 @@
+﻿@font-face {
+	font-family: 'Consolas';
+	src: url('consolas/consolas.eot');
+	src: url('consolas/consolas.woff2') format('woff2'),
+	     url('consolas/consolas.woff') format('woff'),
+	     url('consolas/consolas.eot') format('embedded-opentype'),
+	     url('consolas/consolas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: rgb(29, 29, 29);
+	color: white;
+	height: 100%;
+	font-family: 'Consolas';
+	/*overflow: hidden;*/
+}
+
+#content {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#left {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	overflow-y: auto;
+}
+
+#right {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+}
+
+.CodeMirror-hints, .codemirror-wrapper {
+    background-color: #262626;
+}
+
+.CodeMirror-hint {
+    color: white;
+}
+
+.CodeMirror-hint.CodeMirror-hint-active {
+    background-color: #aaaaaa;
+    color: black;
+}
+
+.cm-trailingspace {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QUXCToH00Y1UgAAACFJREFUCNdjPMDBUc/AwNDAAAFMTAwMDA0OP34wQgX/AQBYgwYEx4f9lQAAAABJRU5ErkJggg==);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+#codemirror-wrapper, #result-wrapper {
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow-y: auto;
+}
+
+.CodeMirror, .CodeMirror pre {
+	font-family: 'Consolas';
+	height: 100% !important;
+}
+
+#result .error {
+    color: red;
+}
+
+#result .warn {
+    color: orange;
+}
+
+#result .info {
+    color: lightblue;
+}
+
+#title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#res-title, #in-title {
+    margin-bottom: 15px;
+}
+
+.placeholder {
+    opacity: 0.5;
+}
+
+.line-wrapper {
+    padding: 10px 30px;
+}
+
+.line-wrapper:nth-child(2n+1) {
+    background-color: rgb(60, 58, 58);
+}
+
+.line-wrapper.eval-return {
+    background-color: #15253c;
+}
+
+.void {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.brackets {
+    opacity: 0.5;
+}

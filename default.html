@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>JS Evaluator</title>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Références WinJS -->
+    <!--link href="css/ui-dark.css" rel="stylesheet" /-->
+
+    <!-- Références CodeMirror -->
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/javascript/javascript.js"></script>
+    <script src="codemirror/hint/show-hint.js"></script>
+    <!-- Hint -->
+    <!--<script src="codemirror/hint/anyword-hint.js"></script>-->
+    <script src="codemirror/hint/javascript-hint.js"></script>
+    <link rel="stylesheet" href="codemirror/hint/show-hint.css">
+    <!-- Active-line -->
+    <script src="codemirror/active-line.js"></script>
+    <!-- Lint -->
+    <script src="codemirror/lint/lint.js"></script>
+    <script src="codemirror/lint/jshint.js"></script>
+    <script src="codemirror/lint/javascript-lint.js"></script>
+    <link rel="stylesheet" href="codemirror/lint/lint.css">
+    <!-- Edit -->
+    <script src="codemirror/edit/matchbrackets.js"></script>
+    <script src="codemirror/edit/closebrackets.js"></script>
+    <script src="codemirror/edit/trailingspace.js"></script>
+    <!-- Fold -->
+    <script src="codemirror/fold/foldcode.js"></script>
+    <script src="codemirror/fold/foldgutter.js"></script>
+    <script src="codemirror/fold/brace-fold.js"></script>
+    <link rel="stylesheet" href="codemirror/fold/foldgutter.css">
+
+    <link rel="stylesheet" href="codemirror/theme/lesser-dark.css">
+
+    <!-- Références JS_Evaluator -->
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/default.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="margin-wrapper">
+            <h1 id="title">JS Evaluator</h1>
+        </div>
+        <div id="content">
+            <div id="left">
+                <h2 id="in-title">Input</h2>
+                <div id="codemirror-wrapper"></div>
+                <button id="eval-btn">Evaluate</button>
+            </div>
+            <div id="right">
+                <h2 id="res-title">Console</h2>
+                <div id="result-wrapper">
+                    <div id="result">
+                        <div class="line-wrapper">
+                            <div class="line"><span class="placeholder">Press the button to evaluate your code...</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
